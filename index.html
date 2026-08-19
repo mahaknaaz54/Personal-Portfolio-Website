@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahak Naaz | Personal Portfolio – BTech Student &amp; Aspiring Software Developer</title>
+  <meta name="description" content="Explore the personal portfolio of Mahak Naaz, a BTech CSE (AI & ML) student at IILM University, Greater Noida. View full-stack projects, software engineering skills, and contact details.">
+  <meta name="author" content="Mahak Naaz">
+  <link rel="canonical" href="index.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Mahak Naaz | Personal Portfolio">
+  <meta property="og:description" content="Explore the personal portfolio of Mahak Naaz, a BTech CSE (AI & ML) student at IILM University, Greater Noida. View projects in React, Node.js, and AI.">
+  <meta property="og:locale"      content="en_IN">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Skip Navigation -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ======================================================
+       Site Header
+       ====================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header__inner">
+
+      <!-- Logo / Brand -->
+      <a href="index.html" class="logo" aria-label="Mahak Naaz – Home">
+        <span class="logo__name">Mahak</span>
+        <span class="logo__dot" aria-hidden="true">.</span>
+      </a>
+
+      <!-- Navigation -->
+      <div id="nav-wrapper" class="nav-wrapper" role="navigation" aria-label="Main navigation">
+        <nav>
+          <ul class="primary-nav" role="list">
+            <li><a href="index.html"    class="nav-link" data-page="index.html"    aria-current="page">Home</a></li>
+            <li><a href="about.html"    class="nav-link" data-page="about.html">About</a></li>
+            <li><a href="projects.html" class="nav-link" data-page="projects.html">Projects</a></li>
+            <li><a href="contact.html"  class="nav-link" data-page="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Actions -->
+      <div class="header__actions">
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+        >
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-wrapper"
+          aria-label="Open navigation menu"
+        >
+          <svg class="menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <svg class="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================
+       Main Content
+       ====================================================== -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- ---- Editorial Hero Section ---- -->
+    <section class="section hero" aria-labelledby="hero-heading">
+      <div class="container" style="display: flex; flex-direction: column;">
+        
+        <!-- Top Editorial Meta -->
+        <div class="hero__top-meta reveal" style="width: 100%;">
+          <span>Creative Developer</span>
+          <span>BTech CSE (AI &amp; ML)</span>
+          <span>Ver. 2026</span>
+        </div>
+
+        <!-- Big Display Title -->
+        <h1 id="hero-heading" class="hero__name reveal reveal--delay-1" style="width: 100%;">
+          Mahak
+        </h1>
+
+        <!-- Hero Grid: Text Left, Photo Right -->
+        <div class="hero-grid-wrap">
+          
+          <!-- Text Content (Left Side) -->
+          <div class="hero__content reveal reveal--delay-2">
+            <p class="hero__tagline" style="font-size: var(--text-xl); font-weight: 700; color: var(--color-text); line-height: 1.3; margin-block-end: var(--space-4);">
+              BTech Student &amp; Aspiring Software Developer at IILM University, Greater Noida.
+            </p>
+            <p class="hero__desc" style="font-size: var(--text-md); color: var(--color-text-2); margin-block-end: var(--space-6);">
+              Building clean, accessible, and intelligent web applications with modern component architecture. Driven by curiosity, software craftsmanship, and continuous learning.
+            </p>
+            <div class="btn-group">
+              <a href="projects.html" class="btn btn--primary btn--lg" id="hero-cta-projects">
+                View Projects ↗
+              </a>
+              <a href="about.html" class="btn btn--outline btn--lg" id="hero-cta-about">About Me</a>
+              <a href="contact.html" class="btn btn--ghost btn--lg" id="hero-cta-contact">Contact</a>
+            </div>
+          </div>
+
+          <!-- Visual Photo (Right Side) -->
+          <div class="hero__visual reveal reveal--delay-3">
+            <div class="hero__avatar-wrap">
+              <div class="hero__avatar-frame">
+                <img
+                  src="images/profile.png"
+                  alt="Mahak Naaz – BTech Student and Aspiring Software Developer"
+                  class="hero__avatar-img"
+                  width="400"
+                  height="500"
+                >
+                <!-- Blended Tech Badge Overlay -->
+                <div class="hero__badge-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                  <span>CSE (AI &amp; ML)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- About Me Section ---- -->
+    <section class="section section--alt" aria-labelledby="about-heading">
+      <div class="container">
+        
+        <div class="section__header">
+          <p class="section__label">Introduction</p>
+          <h2 id="about-heading" class="section__title">About Me</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-8);" class="about-grid-wrap">
+          
+          <div class="reveal">
+            <p style="font-size: var(--text-lg); line-height: 1.7; color: var(--color-text-2); margin-block-end: var(--space-4);">
+              I am a BTech Computer Science & Engineering (AI & ML) student at IILM University, Greater Noida.
+              Passionate about software architecture, algorithms, and full-stack web development.
+            </p>
+            <p style="font-size: var(--text-md); line-height: 1.7; color: var(--color-text-2);">
+              My focus is on creating web applications that satisfy strict accessibility standards (WCAG 2.1 AA) while maintaining high visual polish and optimal performance.
+            </p>
+          </div>
+
+          <!-- Stats Grid -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: var(--space-4);" class="reveal reveal--delay-1">
+            <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); text-align: center;">
+              <div style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 900; color: var(--color-accent);">4+</div>
+              <div style="font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-2); margin-block-start: var(--space-1);">Live Projects</div>
+            </div>
+            <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); text-align: center;">
+              <div style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 900; color: var(--color-accent);">BTech</div>
+              <div style="font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-2); margin-block-start: var(--space-1);">CSE (AI &amp; ML)</div>
+            </div>
+            <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); text-align: center;">
+              <div style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 900; color: var(--color-accent);">IILM</div>
+              <div style="font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-2); margin-block-start: var(--space-1);">Univ, Gr. Noida</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- Recent Work Section ---- -->
+    <section class="section" aria-labelledby="recent-work-heading">
+      <div class="container">
+        
+        <div class="section__header">
+          <p class="section__label">Portfolio</p>
+          <h2 id="recent-work-heading" class="section__title">Recent Work</h2>
+          <p class="section__desc">
+            A selection of my recent software projects, featuring full-stack applications, interactive UI components, and cloud deployments.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Atelier -->
+          <article class="project-card reveal" data-category="fullstack">
+            <header class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">🎨</span>
+              <span class="project-card__status">Deployed</span>
+            </header>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Atelier</h3>
+              <p class="project-card__desc">
+                A full-stack web application designed for a digital fashion studio and creative workspace.
+                Features client-server architecture, responsive interface, and live Vercel cloud deployment.
+              </p>
+              <ul class="project-card__tech" aria-label="Technologies used in Atelier">
+                <li><span class="tech-tag">Full-Stack</span></li>
+                <li><span class="tech-tag">React</span></li>
+                <li><span class="tech-tag">Node.js</span></li>
+                <li><span class="tech-tag">Vercel</span></li>
+              </ul>
+            </div>
+            <footer class="project-card__footer">
+              <a href="https://atelier-self-nu.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Atelier (opens in a new tab)">
+                Live Demo ↗
+              </a>
+              <a href="https://github.com/mahaknaaz54/Atelier" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View source code of Atelier on GitHub (opens in a new tab)" style="margin-inline-start: auto; color: var(--color-text-2);">
+                GitHub
+              </a>
+            </footer>
+          </article>
+
+          <!-- Project 2: Luna -->
+          <article class="project-card reveal reveal--delay-1" data-category="web">
+            <header class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">🌙</span>
+              <span class="project-card__status">Deployed</span>
+            </header>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Luna</h3>
+              <p class="project-card__desc">
+                An interactive React web application built with Vite and serverless API integration.
+                Delivers smooth performance, responsive dynamic layout, and modern component architecture.
+              </p>
+              <ul class="project-card__tech" aria-label="Technologies used in Luna">
+                <li><span class="tech-tag">React</span></li>
+                <li><span class="tech-tag">Vite</span></li>
+                <li><span class="tech-tag">JavaScript</span></li>
+                <li><span class="tech-tag">Vercel</span></li>
+              </ul>
+            </div>
+            <footer class="project-card__footer">
+              <a href="https://luna-ruddy-nine.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Luna (opens in a new tab)">
+                Live Demo ↗
+              </a>
+              <a href="https://github.com/mahaknaaz54/luna" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View source code of Luna on GitHub (opens in a new tab)" style="margin-inline-start: auto; color: var(--color-text-2);">
+                GitHub
+              </a>
+            </footer>
+          </article>
+
+          <!-- Project 3: Dew Theory -->
+          <article class="project-card reveal reveal--delay-2" data-category="frontend">
+            <header class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">💧</span>
+              <span class="project-card__status">Deployed</span>
+            </header>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Dew Theory</h3>
+              <p class="project-card__desc">
+                A sleek, modern web platform crafted with HTML5, CSS3, and Tailwind CSS.
+                Emphasizes high visual polish, fluid responsiveness, and aesthetic UI component design.
+              </p>
+              <ul class="project-card__tech" aria-label="Technologies used in Dew Theory">
+                <li><span class="tech-tag">HTML5/CSS3</span></li>
+                <li><span class="tech-tag">Tailwind CSS</span></li>
+                <li><span class="tech-tag">Vite</span></li>
+                <li><span class="tech-tag">Vercel</span></li>
+              </ul>
+            </div>
+            <footer class="project-card__footer">
+              <a href="https://dewtheory.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Dew Theory (opens in a new tab)">
+                Live Demo ↗
+              </a>
+              <a href="https://github.com/mahaknaaz54/DewTheory" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View source code of Dew Theory on GitHub (opens in a new tab)" style="margin-inline-start: auto; color: var(--color-text-2);">
+                GitHub
+              </a>
+            </footer>
+          </article>
+
+        </div>
+
+        <div style="text-align: center; margin-block-start: 3rem;">
+          <a href="projects.html" class="btn btn--outline btn--lg" id="see-all-projects">
+            See All Projects ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- My Services / Specializations ---- -->
+    <section class="section section--alt" aria-labelledby="services-heading">
+      <div class="container">
+        
+        <div class="section__header">
+          <p class="section__label">Expertise</p>
+          <h2 id="services-heading" class="section__title">My Services</h2>
+          <p class="section__desc">
+            Core areas of expertise in software development, web engineering, and artificial intelligence.
+          </p>
+        </div>
+
+        <div class="services-list">
+          
+          <div class="service-card reveal">
+            <span class="service-card__num">01</span>
+            <div>
+              <h3 class="service-card__title">Web Development</h3>
+              <p style="font-size: var(--text-sm); color: var(--color-text-2);">
+                Building responsive, accessible web applications using HTML5, CSS3, JavaScript, React, Next.js, and Node.js.
+              </p>
+            </div>
+            <span class="service-card__badge">↗</span>
+          </div>
+
+          <div class="service-card reveal reveal--delay-1">
+            <span class="service-card__num">02</span>
+            <div>
+              <h3 class="service-card__title">AI &amp; Machine Learning</h3>
+              <p style="font-size: var(--text-sm); color: var(--color-text-2);">
+                Specialized coursework in BTech CSE (AI & ML) focusing on Python programming, data analysis, and intelligent algorithms.
+              </p>
+            </div>
+            <span class="service-card__badge">↗</span>
+          </div>
+
+          <div class="service-card reveal reveal--delay-2">
+            <span class="service-card__num">03</span>
+            <div>
+              <h3 class="service-card__title">Software Engineering</h3>
+              <p style="font-size: var(--text-sm); color: var(--color-text-2);">
+                Solid foundation in Object-Oriented Programming (Java/Python), Data Structures, Algorithms, and DBMS / SQL.
+              </p>
+            </div>
+            <span class="service-card__badge">↗</span>
+          </div>
+
+          <div class="service-card reveal reveal--delay-3">
+            <span class="service-card__num">04</span>
+            <div>
+              <h3 class="service-card__title">UI/UX &amp; Accessibility</h3>
+              <p style="font-size: var(--text-sm); color: var(--color-text-2);">
+                Implementing WCAG 2.1 AA web standards, semantic HTML structure, keyboard navigation, and theme customization.
+              </p>
+            </div>
+            <span class="service-card__badge">↗</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- Showcasing My Best Work Banner ---- -->
+    <section class="section" aria-labelledby="showcase-heading">
+      <div class="container">
+        
+        <div class="showcase-banner reveal">
+          <p style="font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.8); margin-block-end: var(--space-2);">Featured Project</p>
+          <h2 id="showcase-heading" class="showcase-banner__title">Showcasing Atelier Studio</h2>
+          <p>
+            A full-stack web application designed with modern React components, responsive layouts, and cloud backend APIs.
+          </p>
+          <div style="margin-block-start: var(--space-6);">
+            <a href="https://atelier-self-nu.vercel.app" class="btn" target="_blank" rel="noopener noreferrer" style="background: #FFFFFF; color: var(--color-accent); font-weight: 700;">
+              Explore Atelier Live ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- Call to Action ---- -->
+    <section class="section section--alt cta-section" aria-labelledby="cta-heading">
+      <div class="container" style="text-align: center;">
+        <div class="section__header reveal">
+          <p class="section__label" style="justify-content: center;">Collaboration</p>
+          <h2 id="cta-heading" class="section__title">Stay Updated &amp; Connect</h2>
+          <p class="section__desc" style="margin-inline: auto;">
+            Open for internships, projects, and software development opportunities. Let's connect!
+          </p>
+        </div>
+        <div class="btn-group" style="justify-content: center;" role="group" aria-label="Contact and social links">
+          <a href="contact.html" class="btn btn--primary btn--lg" id="cta-contact-btn">Send Message ↗</a>
+          <a href="https://github.com/mahaknaaz54" class="btn btn--ghost btn--lg" target="_blank" rel="noopener noreferrer" id="cta-github-btn" aria-label="View my GitHub profile (opens in a new tab)">
+            GitHub Profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       Footer
+       ====================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer__inner" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-8);">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="index.html" class="logo" aria-label="Mahak Naaz – Home">
+            <span class="logo__name">Mahak</span>
+            <span class="logo__dot" aria-hidden="true">.</span>
+          </a>
+          <p class="footer__tagline" style="margin-block-start: var(--space-2);">
+            BTech Student &amp; Aspiring Software Developer<br>
+            IILM University, Greater Noida
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <nav aria-label="Footer navigation">
+          <p class="footer__nav-title" style="font-weight: 700; margin-block-end: var(--space-3);">Pages</p>
+          <ul class="footer__nav-list" role="list" style="display: flex; flex-direction: column; gap: var(--space-2);">
+            <li><a href="index.html"    class="footer__nav-link">Home</a></li>
+            <li><a href="about.html"    class="footer__nav-link">About</a></li>
+            <li><a href="projects.html" class="footer__nav-link">Projects</a></li>
+            <li><a href="contact.html"  class="footer__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Direct Contact -->
+        <div>
+          <p class="footer__nav-title" style="font-weight: 700; margin-block-end: var(--space-3);">Direct Contact</p>
+          <p style="font-size: var(--text-sm); margin-block-end: var(--space-3);">
+            <a href="mailto:mahaknaaz7562@gmail.com" style="color: #FFFFFF; font-weight: 600; text-decoration: underline;">mahaknaaz7562@gmail.com</a>
+          </p>
+          <ul class="footer__social" role="list">
+            <li>
+              <a href="https://github.com/mahaknaaz54" class="social-link" aria-label="GitHub profile (opens in a new tab)" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/mahak-naaz-7453bb42b/" class="social-link" aria-label="LinkedIn profile (opens in a new tab)" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Giant Signature Display Title -->
+      <div class="footer__big-signature">
+        <div class="footer__signature-text">Mahak</div>
+        <div class="footer__signature-icon" aria-hidden="true">↗</div>
+      </div>
+
+      <!-- Footer Bottom Copyright -->
+      <div class="footer__bottom" style="border-top: none; margin-block-start: var(--space-4); padding-block-start: var(--space-4);">
+        <p class="footer__copy">
+          &copy; <span id="footer-year">2026</span> Mahak Naaz. All rights reserved. Built with Semantic HTML5, Custom CSS &amp; JS.
+        </p>
+        <p class="footer__copy">
+          WCAG 2.1 AA &amp; SEO Compliant Portfolio
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
+

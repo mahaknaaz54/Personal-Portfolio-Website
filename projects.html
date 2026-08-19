@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Mahak Naaz – Software Development Projects</title>
+  <meta name="description" content="Browse the projects built by Mahak Naaz — a BTech student developing skills in web development, Python programming, databases, and software engineering.">
+  <meta name="author" content="Mahak Naaz">
+  <link rel="canonical" href="projects.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Projects | Mahak Naaz – Software Development Projects">
+  <meta property="og:description" content="Browse the projects built by Mahak Naaz — a BTech student developing skills in web development, Python programming, databases, and software engineering.">
+  <meta property="og:locale"      content="en_IN">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Mahak Naaz – Home">
+        <span class="logo__name">Mahak</span>
+        <span class="logo__dot" aria-hidden="true">.</span>
+      </a>
+
+      <div id="nav-wrapper" class="nav-wrapper" role="navigation" aria-label="Main navigation">
+        <nav>
+          <ul class="primary-nav" role="list">
+            <li><a href="index.html"    class="nav-link" data-page="index.html">Home</a></li>
+            <li><a href="about.html"    class="nav-link" data-page="about.html">About</a></li>
+            <li><a href="projects.html" class="nav-link" data-page="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="contact.html"  class="nav-link" data-page="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun"  xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-wrapper" aria-label="Open navigation menu">
+          <svg class="menu-icon-open"  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg class="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div class="container">
+        <p class="page-hero__label">My Work</p>
+        <h1 class="page-hero__title">Projects</h1>
+        <p class="page-hero__desc">
+          A collection of projects I've built while learning software
+          development — from web interfaces to command-line tools to
+          database-driven applications.
+        </p>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <h2 id="projects-heading" class="visually-hidden">All Projects</h2>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" role="group" aria-label="Filter projects by category">
+          <span class="filter-label" id="filter-label" aria-hidden="true">Filter:</span>
+          <button class="filter-btn" type="button" data-filter="all"       aria-pressed="true"  aria-label="Show all projects">All</button>
+          <button class="filter-btn" type="button" data-filter="fullstack" aria-pressed="false" aria-label="Show full stack projects">Full-Stack</button>
+          <button class="filter-btn" type="button" data-filter="react"     aria-pressed="false" aria-label="Show React projects">React</button>
+          <button class="filter-btn" type="button" data-filter="nextjs"    aria-pressed="false" aria-label="Show Next.js projects">Next.js</button>
+          <button class="filter-btn" type="button" data-filter="frontend"  aria-pressed="false" aria-label="Show frontend projects">Frontend</button>
+        </div>
+
+        <!-- Project Cards -->
+        <div class="projects-grid" role="list" aria-label="Project list">
+
+          <!-- Project 1: Atelier -->
+          <article id="project-atelier" class="project-card reveal" role="listitem" data-category="fullstack,react" aria-label="Atelier project">
+            <header class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">🎨</span>
+              <span class="project-card__status">Deployed</span>
+            </header>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Atelier</h2>
+              <p class="project-card__desc">
+                A full-stack web application designed for a digital fashion studio and creative workspace.
+                Features client-server architecture, responsive interface, and live Vercel cloud deployment.
+              </p>
+              <h3 class="visually-hidden">Technologies used in Atelier</h3>
+              <ul class="project-card__tech" aria-label="Technologies used in Atelier">
+                <li><span class="tech-tag">Full-Stack</span></li>
+                <li><span class="tech-tag">React</span></li>
+                <li><span class="tech-tag">Node.js</span></li>
+                <li><span class="tech-tag">Express</span></li>
+                <li><span class="tech-tag">Vercel</span></li>
+              </ul>
+            </div>
+            <footer class="project-card__footer" style="display: flex; justify-content: space-between; align-items: center;">
+              <a href="https://atelier-self-nu.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Atelier (opens in a new tab)">
+                Live Demo ↗
+              </a>
+              <a href="https://github.com/mahaknaaz54/Atelier" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View source code of Atelier on GitHub (opens in a new tab)" style="color: var(--color-text-2);">
+                GitHub Repository
+              </a>
+            </footer>
+          </article>
+
+          <!-- Project 2: Luna -->
+          <article id="project-luna" class="project-card reveal reveal--delay-1" role="listitem" data-category="react,frontend" aria-label="Luna project">
+            <header class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">🌙</span>
+              <span class="project-card__status">Deployed</span>
+            </header>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Luna</h2>
+              <p class="project-card__desc">
+                An interactive React web application built with Vite and serverless API integration.
+                Delivers smooth performance, responsive dynamic layout, and modern component state handling.
+              </p>
+              <h3 class="visually-hidden">Technologies used in Luna</h3>
+              <ul class="project-card__tech" aria-label="Technologies used in Luna">
+                <li><span class="tech-tag">React</span></li>
+                <li><span class="tech-tag">Vite</span></li>
+                <li><span class="tech-tag">JavaScript</span></li>
+                <li><span class="tech-tag">Serverless API</span></li>
+                <li><span class="tech-tag">Vercel</span></li>
+              </ul>
+            </div>
+            <footer class="project-card__footer" style="display: flex; justify-content: space-between; align-items: center;">
+              <a href="https://luna-ruddy-nine.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Luna (opens in a new tab)">
+                Live Demo ↗
+              </a>
+              <a href="https://github.com/mahaknaaz54/luna" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View source code of Luna on GitHub (opens in a new tab)" style="color: var(--color-text-2);">
+                GitHub Repository
+              </a>
+            </footer>
+          </article>
+
+          <!-- Project 3: Dew Theory -->
+          <article id="project-dewtheory" class="project-card reveal reveal--delay-2" role="listitem" data-category="frontend" aria-label="Dew Theory project">
+            <header class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">💧</span>
+              <span class="project-card__status">Deployed</span>
+            </header>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Dew Theory</h2>
+              <p class="project-card__desc">
+                A sleek, modern web platform crafted with HTML5, CSS3, and Tailwind CSS.
+                Emphasizes high visual polish, fluid responsiveness, and aesthetic UI component design.
+              </p>
+              <h3 class="visually-hidden">Technologies used in Dew Theory</h3>
+              <ul class="project-card__tech" aria-label="Technologies used in Dew Theory">
+                <li><span class="tech-tag">HTML5/CSS3</span></li>
+                <li><span class="tech-tag">Tailwind CSS</span></li>
+                <li><span class="tech-tag">Vite</span></li>
+                <li><span class="tech-tag">Vercel</span></li>
+              </ul>
+            </div>
+            <footer class="project-card__footer" style="display: flex; justify-content: space-between; align-items: center;">
+              <a href="https://dewtheory.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Dew Theory (opens in a new tab)">
+                Live Demo ↗
+              </a>
+              <a href="https://github.com/mahaknaaz54/DewTheory" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View source code of Dew Theory on GitHub (opens in a new tab)" style="color: var(--color-text-2);">
+                GitHub Repository
+              </a>
+            </footer>
+          </article>
+
+          <!-- Project 4: Planner -->
+          <article id="project-planner" class="project-card reveal reveal--delay-3" role="listitem" data-category="nextjs,react" aria-label="Planner project">
+            <header class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">📅</span>
+              <span class="project-card__status">Open Source</span>
+            </header>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Planner</h2>
+              <p class="project-card__desc">
+                A modern productivity planning app built with Next.js and React.
+                Designed for organizing tasks, schedules, and daily routines with modern frontend component architecture.
+              </p>
+              <h3 class="visually-hidden">Technologies used in Planner</h3>
+              <ul class="project-card__tech" aria-label="Technologies used in Planner">
+                <li><span class="tech-tag">Next.js</span></li>
+                <li><span class="tech-tag">React</span></li>
+                <li><span class="tech-tag">JavaScript</span></li>
+                <li><span class="tech-tag">CSS3</span></li>
+              </ul>
+            </div>
+            <footer class="project-card__footer">
+              <a href="https://github.com/mahaknaaz54/Planner" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View source code of Planner on GitHub (opens in a new tab)">
+                View Source Code
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--alt cta-section" aria-labelledby="projects-cta-heading">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__label">Collaboration</p>
+          <h2 id="projects-cta-heading" class="section__title">Have a project in mind?</h2>
+          <p class="section__desc">
+            I'm always open to learning, building, and collaborating.
+            If you'd like to work together or have feedback, feel free
+            to reach out.
+          </p>
+        </div>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="contact.html" class="btn btn--primary btn--lg" id="projects-contact-btn">Get In Touch</a>
+          <a href="https://github.com/mahaknaaz54" class="btn btn--ghost btn--lg" target="_blank" rel="noopener noreferrer" aria-label="View all my projects on GitHub (opens in a new tab)" id="projects-github-btn">
+            View GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-8);">
+        <div class="footer__brand">
+          <a href="index.html" class="logo" aria-label="Mahak Naaz – Home">
+            <span class="logo__name">Mahak</span>
+            <span class="logo__dot" aria-hidden="true">.</span>
+          </a>
+          <p class="footer__tagline" style="margin-block-start: var(--space-2);">
+            BTech Student &amp; Aspiring Software Developer<br>
+            IILM University, Greater Noida
+          </p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <p class="footer__nav-title" style="font-weight: 700; margin-block-end: var(--space-3);">Pages</p>
+          <ul class="footer__nav-list" role="list" style="display: flex; flex-direction: column; gap: var(--space-2);">
+            <li><a href="index.html"    class="footer__nav-link">Home</a></li>
+            <li><a href="about.html"    class="footer__nav-link">About</a></li>
+            <li><a href="projects.html" class="footer__nav-link">Projects</a></li>
+            <li><a href="contact.html"  class="footer__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer__nav-title" style="font-weight: 700; margin-block-end: var(--space-3);">Direct Contact</p>
+          <p style="font-size: var(--text-sm); margin-block-end: var(--space-3);">
+            <a href="mailto:mahaknaaz7562@gmail.com" style="color: #FFFFFF; font-weight: 600; text-decoration: underline;">mahaknaaz7562@gmail.com</a>
+          </p>
+          <ul class="footer__social" role="list">
+            <li><a href="https://github.com/mahaknaaz54"   class="social-link" aria-label="GitHub profile (opens in a new tab)" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/mahak-naaz-7453bb42b/" class="social-link" aria-label="LinkedIn profile (opens in a new tab)" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__big-signature">
+        <div class="footer__signature-text">Mahak</div>
+        <div class="footer__signature-icon" aria-hidden="true">↗</div>
+      </div>
+      <div class="footer__bottom" style="border-top: none; margin-block-start: var(--space-4); padding-block-start: var(--space-4);">
+        <p class="footer__copy">&copy; <span id="footer-year">2026</span> Mahak Naaz. All rights reserved. Built with Semantic HTML5, Custom CSS &amp; JS.</p>
+        <p class="footer__copy">WCAG 2.1 AA &amp; SEO Compliant Portfolio</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="js/script.js"></script>
+</body>
+</html>
