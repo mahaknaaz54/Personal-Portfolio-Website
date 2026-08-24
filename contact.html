@@ -98,7 +98,7 @@
                 </div>
               </div>
 
-              <div class="contact-detail" style="margin-block-start: 1.25rem;">
+              <div class="contact-detail">
                 <span class="contact-detail__icon" aria-hidden="true">📍</span>
                 <div>
                   <p class="contact-detail__label">Location</p>
@@ -106,7 +106,7 @@
                 </div>
               </div>
 
-              <div class="contact-detail" style="margin-block-start: 1.25rem;">
+              <div class="contact-detail">
                 <span class="contact-detail__icon" aria-hidden="true">💼</span>
                 <div>
                   <p class="contact-detail__label">GitHub</p>
@@ -116,7 +116,7 @@
                 </div>
               </div>
 
-              <div class="contact-detail" style="margin-block-start: 1.25rem;">
+              <div class="contact-detail">
                 <span class="contact-detail__icon" aria-hidden="true">🔗</span>
                 <div>
                   <p class="contact-detail__label">LinkedIn</p>
@@ -129,8 +129,8 @@
             </address>
 
             <!-- Social Links -->
-            <div style="margin-block-start: 2rem;">
-              <p class="footer__nav-title" style="margin-block-end: 1rem;">Find me online</p>
+            <div class="contact-social-wrap">
+              <p class="footer__nav-title contact-social-title">Find me online</p>
               <ul class="footer__social" role="list">
                 <li>
                   <a href="https://github.com/mahaknaaz54" class="social-link" aria-label="GitHub profile (opens in a new tab)" target="_blank" rel="noopener noreferrer">
@@ -261,7 +261,7 @@
                 </div>
 
                 <!-- Honeypot field (spam prevention – hidden from everyone) -->
-                <div class="form-group form-group--full" aria-hidden="true" style="display:none;">
+                <div class="form-group form-group--full hidden-honeypot" aria-hidden="true">
                   <label for="website">Website (do not fill this in)</label>
                   <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
                 </div>
@@ -269,13 +269,13 @@
               </div>
 
               <!-- Required fields note -->
-              <p class="form-hint" style="margin-block: 0.75rem 0;">
+              <p class="form-hint">
                 Fields marked with <span aria-label="asterisk, required">*</span> are required.
               </p>
 
               <!-- Submit -->
               <div class="form-submit">
-                <button type="submit" class="btn btn--primary btn--lg" id="form-submit-btn" style="width: 100%; justify-content: center;">
+                <button type="submit" class="btn btn--primary btn--lg btn--full" id="form-submit-btn">
                   Send Message
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                 </button>
@@ -292,20 +292,20 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer__inner" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-8);">
+      <div class="footer__inner">
         <div class="footer__brand">
           <a href="index.html" class="logo" aria-label="Mahak Naaz – Home">
             <span class="logo__name">Mahak</span>
             <span class="logo__dot" aria-hidden="true">.</span>
           </a>
-          <p class="footer__tagline" style="margin-block-start: var(--space-2);">
+          <p class="footer__tagline">
             BTech Student &amp; Aspiring Software Developer<br>
             IILM University, Greater Noida
           </p>
         </div>
         <nav aria-label="Footer navigation">
-          <p class="footer__nav-title" style="font-weight: 700; margin-block-end: var(--space-3);">Pages</p>
-          <ul class="footer__nav-list" role="list" style="display: flex; flex-direction: column; gap: var(--space-2);">
+          <p class="footer__nav-title">Pages</p>
+          <ul class="footer__nav-list" role="list">
             <li><a href="index.html"    class="footer__nav-link">Home</a></li>
             <li><a href="about.html"    class="footer__nav-link">About</a></li>
             <li><a href="projects.html" class="footer__nav-link">Projects</a></li>
@@ -313,9 +313,9 @@
           </ul>
         </nav>
         <div>
-          <p class="footer__nav-title" style="font-weight: 700; margin-block-end: var(--space-3);">Direct Contact</p>
-          <p style="font-size: var(--text-sm); margin-block-end: var(--space-3);">
-            <a href="mailto:mahaknaaz7562@gmail.com" style="color: #FFFFFF; font-weight: 600; text-decoration: underline;">mahaknaaz7562@gmail.com</a>
+          <p class="footer__nav-title">Direct Contact</p>
+          <p class="footer__contact-info">
+            <a href="mailto:mahaknaaz7562@gmail.com" class="footer__contact-email">mahaknaaz7562@gmail.com</a>
           </p>
           <ul class="footer__social" role="list">
             <li><a href="https://github.com/mahaknaaz54"   class="social-link" aria-label="GitHub profile (opens in a new tab)" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li>
@@ -327,7 +327,7 @@
         <div class="footer__signature-text">Mahak</div>
         <div class="footer__signature-icon" aria-hidden="true">↗</div>
       </div>
-      <div class="footer__bottom" style="border-top: none; margin-block-start: var(--space-4); padding-block-start: var(--space-4);">
+      <div class="footer__bottom footer__bottom--signature">
         <p class="footer__copy">&copy; <span id="footer-year">2026</span> Mahak Naaz. All rights reserved. Built with Semantic HTML5, Custom CSS &amp; JS.</p>
         <p class="footer__copy">WCAG 2.1 AA &amp; SEO Compliant Portfolio</p>
       </div>
