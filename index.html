@@ -211,95 +211,8 @@
           </p>
         </div>
 
-        <div class="projects-grid">
-
-          <!-- Project 1: Atelier -->
-          <article class="project-card reveal" data-category="fullstack">
-            <header class="project-card__header">
-              <span class="project-card__icon" aria-hidden="true">🎨</span>
-              <span class="project-card__status">Deployed</span>
-            </header>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Atelier</h3>
-              <p class="project-card__desc">
-                A full-stack web application designed for a digital fashion studio and creative workspace.
-                Features client-server architecture, responsive interface, and live Vercel cloud deployment.
-              </p>
-              <ul class="project-card__tech" aria-label="Technologies used in Atelier">
-                <li><span class="tech-tag">Full-Stack</span></li>
-                <li><span class="tech-tag">React</span></li>
-                <li><span class="tech-tag">Node.js</span></li>
-                <li><span class="tech-tag">Vercel</span></li>
-              </ul>
-            </div>
-            <footer class="project-card__footer">
-              <a href="https://atelier-self-nu.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Atelier (opens in a new tab)">
-                Live Demo ↗
-              </a>
-              <a href="https://github.com/mahaknaaz54/Atelier" class="project-link project-link--secondary" target="_blank" rel="noopener noreferrer" aria-label="View source code of Atelier on GitHub (opens in a new tab)">
-                GitHub
-              </a>
-            </footer>
-          </article>
-
-          <!-- Project 2: Luna -->
-          <article class="project-card reveal reveal--delay-1" data-category="web">
-            <header class="project-card__header">
-              <span class="project-card__icon" aria-hidden="true">🌙</span>
-              <span class="project-card__status">Deployed</span>
-            </header>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Luna</h3>
-              <p class="project-card__desc">
-                An interactive React web application built with Vite and serverless API integration.
-                Delivers smooth performance, responsive dynamic layout, and modern component architecture.
-              </p>
-              <ul class="project-card__tech" aria-label="Technologies used in Luna">
-                <li><span class="tech-tag">React</span></li>
-                <li><span class="tech-tag">Vite</span></li>
-                <li><span class="tech-tag">JavaScript</span></li>
-                <li><span class="tech-tag">Vercel</span></li>
-              </ul>
-            </div>
-            <footer class="project-card__footer">
-              <a href="https://luna-ruddy-nine.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Luna (opens in a new tab)">
-                Live Demo ↗
-              </a>
-              <a href="https://github.com/mahaknaaz54/luna" class="project-link project-link--secondary" target="_blank" rel="noopener noreferrer" aria-label="View source code of Luna on GitHub (opens in a new tab)">
-                GitHub
-              </a>
-            </footer>
-          </article>
-
-          <!-- Project 3: Dew Theory -->
-          <article class="project-card reveal reveal--delay-2" data-category="frontend">
-            <header class="project-card__header">
-              <span class="project-card__icon" aria-hidden="true">💧</span>
-              <span class="project-card__status">Deployed</span>
-            </header>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Dew Theory</h3>
-              <p class="project-card__desc">
-                A sleek, modern web platform crafted with HTML5, CSS3, and Tailwind CSS.
-                Emphasizes high visual polish, fluid responsiveness, and aesthetic UI component design.
-              </p>
-              <ul class="project-card__tech" aria-label="Technologies used in Dew Theory">
-                <li><span class="tech-tag">HTML5/CSS3</span></li>
-                <li><span class="tech-tag">Tailwind CSS</span></li>
-                <li><span class="tech-tag">Vite</span></li>
-                <li><span class="tech-tag">Vercel</span></li>
-              </ul>
-            </div>
-            <footer class="project-card__footer">
-              <a href="https://dewtheory.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Dew Theory (opens in a new tab)">
-                Live Demo ↗
-              </a>
-              <a href="https://github.com/mahaknaaz54/DewTheory" class="project-link project-link--secondary" target="_blank" rel="noopener noreferrer" aria-label="View source code of Dew Theory on GitHub (opens in a new tab)">
-                GitHub
-              </a>
-            </footer>
-          </article>
-
+        <div class="projects-grid" data-page="home">
+          <!-- Dynamically populated with latest 3 GitHub projects by js/github-projects.js -->
         </div>
 
         <div class="center-align-wrap">
@@ -491,6 +404,7 @@
     document.getElementById('footer-year').textContent = new Date().getFullYear();
   </script>
   <script src="js/script.js"></script>
+  <script src="js/github-projects.js"></script>
 
 </body>
 </html>

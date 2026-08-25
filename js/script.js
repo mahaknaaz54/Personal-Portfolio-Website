@@ -218,10 +218,14 @@
 })();
 
 /* ============================================================
-   6. Project Filter (projects.html)
+   6. Project Filter (projects.html - static fallback)
+   (Dynamic filtering is handled in github-projects.js once loaded)
    ============================================================ */
 (function initProjectFilter() {
-  const filterBtns  = document.querySelectorAll('.filter-btn');
+  // If github-projects handles the page dynamically, let it manage filtering
+  if (document.querySelector('.projects-grid[data-page="projects"]')) return;
+
+  const filterBtns   = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card[data-category]');
 
   if (!filterBtns.length || !projectCards.length) return;
