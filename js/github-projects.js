@@ -151,6 +151,19 @@ function getRepoStatus(repo) {
   return 'Open Source';
 }
 
+/** Check if a topic is a portfolio classification tag */
+function isMetaTopic(t) {
+  if (!t) return true;
+  const s = t.toLowerCase().trim();
+  return (
+    s === 'portfolio' ||
+    s === 'portfolio-website' ||
+    s === 'portfolio-project' ||
+    s === 'portfolio-item' ||
+    s === 'portfolio-demo'
+  );
+}
+
 /**
  * Build data-category string from topics and language.
  * Used by the filter bar.
@@ -159,7 +172,7 @@ function getCategories(repo) {
   const cats = [];
   if (Array.isArray(repo.topics)) {
     repo.topics
-      .filter((t) => t.toLowerCase() !== GITHUB_CONFIG.portfolioTag.toLowerCase())
+      .filter((t) => !isMetaTopic(t))
       .forEach((t) => cats.push(t.toLowerCase()));
   }
   if (repo.language) {
@@ -168,11 +181,15 @@ function getCategories(repo) {
   return [...new Set(cats)].join(',');
 }
 
-/** Format a repo name for display: "my-cool-app" → "My Cool App" */
+/** Format a repo name for display: "DewTheory" → "Dew Theory", "TO-DO" → "TO-DO" */
 function formatRepoName(name) {
+  if (!name) return '';
+  if (name.toUpperCase() === 'TO-DO' || name.toUpperCase() === 'TODO') return 'TO-DO';
   return name
+    .replace(/([a-z])([A-Z])/g, '$1 $2')
     .replace(/[-_]/g, ' ')
-    .replace(/\b\w/g, (c) => c.toUpperCase());
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .trim();
 }
 
 function transformRepo(repo) {
@@ -180,11 +197,10 @@ function transformRepo(repo) {
     id:          repo.id,
     slug:        repo.name,
     title:       formatRepoName(repo.name),
-    description: repo.description || 'No description provided.',
     githubUrl:   repo.html_url,
     homepageUrl: repo.homepage && repo.homepage.trim() ? repo.homepage.trim() : null,
     language:    repo.language || null,
-    topics:      (repo.topics || []).filter((t) => t.toLowerCase() !== GITHUB_CONFIG.portfolioTag.toLowerCase()),
+    topics:      (repo.topics || []).filter((t) => !isMetaTopic(t)),
     stars:       repo.stargazers_count,
     forks:       repo.forks_count,
     updatedAt:   repo.pushed_at || repo.updated_at,
@@ -196,8 +212,7 @@ function transformRepo(repo) {
 
 /* ============================================================
    4. Project Card Rendering
-   Generates HTML that exactly matches the existing card structure
-   used in projects.html / index.html.
+   Generates HTML matching the card structure without description.
    ============================================================ */
 function buildTechTagsHTML(project) {
   const tags = [];
@@ -213,7 +228,7 @@ function buildTechTagsHTML(project) {
     if (!tags.includes(label)) tags.push(label);
   });
 
-  if (tags.length === 0) tags.push('GitHub Project');
+  if (tags.length === 0) tags.push('Web App');
 
   return tags
     .map((tag) => `<li><span class="tech-tag">${escapeHtml(tag)}</span></li>`)
@@ -277,7 +292,6 @@ function buildProjectCardHTML(project, delayClass = '') {
       </header>
       <div class="project-card__body">
         <h2 class="project-card__title">${escapeHtml(project.title)}</h2>
-        <p class="project-card__desc">${escapeHtml(project.description)}</p>
         <h3 class="visually-hidden">Technologies used in ${escapeHtml(project.title)}</h3>
         <ul class="project-card__tech" aria-label="Technologies used in ${escapeHtml(project.title)}">
           ${buildTechTagsHTML(project)}
@@ -313,7 +327,6 @@ function buildSkeletonHTML(count = 3) {
       </header>
       <div class="project-card__body">
         <h2 class="project-card__title">Loading project…</h2>
-        <p class="project-card__desc">Fetching from GitHub…</p>
         <ul class="project-card__tech">
           <li><span class="tech-tag">—</span></li>
         </ul>
@@ -358,7 +371,7 @@ function collectUniqueCategories(projects) {
   const set = new Set();
   projects.forEach((p) => {
     p.topics.forEach((t) => {
-      if (t && t.toLowerCase() !== GITHUB_CONFIG.portfolioTag.toLowerCase()) {
+      if (t && !isMetaTopic(t)) {
         set.add(t.toLowerCase());
       }
     });
