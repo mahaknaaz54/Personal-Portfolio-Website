@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects | Mahak Naaz – Software Development Projects</title>
+  <meta name="description" content="Browse software engineering and web development projects by Mahak Naaz — featuring Atelier, Luna, Dew Theory, To-Do List, and Weather App.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <script type="module" src="/main.js"></script>
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+
+  <main id="main-content" tabindex="-1" style="position: relative; z-index: 1;">
+    
+    <!-- Hero Banner -->
+    <div style="padding: var(--space-6) 0 var(--space-5); border-bottom: 1px solid var(--border); background: var(--surface-alt);">
+      <div class="container">
+        <p class="section__label">Portfolio</p>
+        <h1 class="section-title" style="font-size: var(--text-3xl);">
+          All Projects <span class="section-script-annot">things I've built</span>
+        </h1>
+        <p class="section__desc" style="max-width: 60ch; margin-top: var(--space-2);">
+          A collection of 5 projects built and maintained across my GitHub repositories. Explore <span class="highlight-pink">my work</span> below.
+        </p>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="projects" aria-labelledby="projects-heading" style="border-top: none;">
+      <div class="container">
+
+        <h2 id="projects-heading" class="visually-hidden">Projects Gallery</h2>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" role="group" aria-label="Filter projects" style="display: flex; gap: var(--space-2); margin-bottom: var(--space-6); flex-wrap: wrap;">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All (5)</button>
+          <button class="filter-btn" type="button" data-filter="fullstack" aria-pressed="false">Full-Stack</button>
+          <button class="filter-btn" type="button" data-filter="react" aria-pressed="false">React</button>
+          <button class="filter-btn" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+          <button class="filter-btn" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+        </div>
+
+        <!-- Equal Weight Typographic Project Gallery (All 5 Projects, No Images) -->
+        <div class="projects-equal-gallery" role="list" aria-label="Projects">
+
+          <!-- Project 1: Atelier -->
+          <article class="project-equal-card" role="listitem" data-category="fullstack,react">
+            <div class="project-equal-card__top">
+              <span class="project-equal-card__lang">Full-Stack</span>
+              <span class="project-equal-card__badge">Deployed</span>
+            </div>
+            <h3 class="project-equal-card__title">Atelier</h3>
+            <p class="project-equal-card__desc">
+              A full-stack web application designed for a digital fashion studio and creative workspace with client-server architecture and live cloud deployment.
+            </p>
+            <ul class="project-equal-card__tech" aria-label="Technologies used">
+              <li><span class="tag">React</span></li>
+              <li><span class="tag">Node.js</span></li>
+              <li><span class="tag">Express</span></li>
+              <li><span class="tag">Vercel</span></li>
+            </ul>
+            <footer class="project-equal-card__footer">
+              <a href="https://atelier-self-nu.vercel.app" class="project-link-main" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+              <a href="https://github.com/mahaknaaz54/Atelier" class="project-link-sub" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </footer>
+          </article>
+
+          <!-- Project 2: Luna -->
+          <article class="project-equal-card" role="listitem" data-category="react,javascript,web">
+            <div class="project-equal-card__top">
+              <span class="project-equal-card__lang">React</span>
+              <span class="project-equal-card__badge">Deployed</span>
+            </div>
+            <h3 class="project-equal-card__title">Luna</h3>
+            <p class="project-equal-card__desc">
+              An interactive React web application built with Vite and serverless API integration, providing smooth performance and modern component architecture.
+            </p>
+            <ul class="project-equal-card__tech" aria-label="Technologies used">
+              <li><span class="tag">React</span></li>
+              <li><span class="tag">Vite</span></li>
+              <li><span class="tag">JavaScript</span></li>
+              <li><span class="tag">Netlify</span></li>
+            </ul>
+            <footer class="project-equal-card__footer">
+              <a href="https://luna-track.netlify.app/" class="project-link-main" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+              <a href="https://github.com/mahaknaaz54/luna" class="project-link-sub" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </footer>
+          </article>
+
+          <!-- Project 3: Dew Theory -->
+          <article class="project-equal-card" role="listitem" data-category="frontend,javascript,tailwind">
+            <div class="project-equal-card__top">
+              <span class="project-equal-card__lang">Frontend</span>
+              <span class="project-equal-card__badge">Deployed</span>
+            </div>
+            <h3 class="project-equal-card__title">Dew Theory</h3>
+            <p class="project-equal-card__desc">
+              A sleek, modern web platform crafted with HTML5, CSS3, and Tailwind CSS with fluid responsiveness and aesthetic component design.
+            </p>
+            <ul class="project-equal-card__tech" aria-label="Technologies used">
+              <li><span class="tag">HTML5/CSS3</span></li>
+              <li><span class="tag">Tailwind</span></li>
+              <li><span class="tag">Vite</span></li>
+              <li><span class="tag">Vercel</span></li>
+            </ul>
+            <footer class="project-equal-card__footer">
+              <a href="https://dewtheory.vercel.app" class="project-link-main" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+              <a href="https://github.com/mahaknaaz54/DewTheory" class="project-link-sub" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </footer>
+          </article>
+
+          <!-- Project 4: To-Do List -->
+          <article class="project-equal-card" role="listitem" data-category="javascript,web,frontend">
+            <div class="project-equal-card__top">
+              <span class="project-equal-card__lang">JavaScript</span>
+              <span class="project-equal-card__badge">Deployed</span>
+            </div>
+            <h3 class="project-equal-card__title">To-Do List</h3>
+            <p class="project-equal-card__desc">
+              A dynamic task and productivity management web application featuring local storage persistence, category tagging, and clean responsive interface.
+            </p>
+            <ul class="project-equal-card__tech" aria-label="Technologies used">
+              <li><span class="tag">JavaScript</span></li>
+              <li><span class="tag">HTML5/CSS3</span></li>
+              <li><span class="tag">Local Storage</span></li>
+              <li><span class="tag">Netlify</span></li>
+            </ul>
+            <footer class="project-equal-card__footer">
+              <a href="https://mtaskflow.netlify.app" class="project-link-main" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+              <a href="https://github.com/mahaknaaz54/TO-DO" class="project-link-sub" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </footer>
+          </article>
+
+          <!-- Project 5: Weather App -->
+          <article class="project-equal-card" role="listitem" data-category="javascript,web,api">
+            <div class="project-equal-card__top">
+              <span class="project-equal-card__lang">API / JS</span>
+              <span class="project-equal-card__badge">Deployed</span>
+            </div>
+            <h3 class="project-equal-card__title">Weather App</h3>
+            <p class="project-equal-card__desc">
+              Real-time weather forecasting and atmospheric dashboard application fetching live meteorological data with fluid responsive UI.
+            </p>
+            <ul class="project-equal-card__tech" aria-label="Technologies used">
+              <li><span class="tag">JavaScript</span></li>
+              <li><span class="tag">Weather API</span></li>
+              <li><span class="tag">CSS3</span></li>
+              <li><span class="tag">Netlify</span></li>
+            </ul>
+            <footer class="project-equal-card__footer">
+              <a href="https://mmausam.netlify.app" class="project-link-main" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+              <a href="https://github.com/mahaknaaz54/weather" class="project-link-sub" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </footer>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

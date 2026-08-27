@@ -1,0 +1,141 @@
+/* ============================================================
+   Self-Hosted Fonts: Allura
+   ============================================================ */
+@font-face {
+  font-family: 'Allura';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/allura-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Allura';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/allura-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ============================================================
+   Design Tokens — Editorial Portfolio
+   Deep Green + Warm Cream + Pink / Sage Accents
+   ============================================================ */
+
+:root {
+  /* ---- Colour Palette ---- */
+  --c-deep:        #1D221F;   /* Primary Deep Green (headings, hero typography, primary brand) */
+  --c-deep-2:      #2F3E37;   /* Secondary Deep Green (body copy, surface text, dark borders) */
+  --c-sage:        #A8C5A1;   /* Restrained Sage Accent */
+  --c-sage-pale:   #DCE8D6;   /* Pale Sage for decorative backgrounds & M element */
+  --c-cream:       #FFF8F5;   /* Warm Off-White / Cream Canvas (Default Background) */
+  /* ---- Pantone 18-1411 TCX Plum Wine Accent Palette ---- */
+  --c-plum-wine:        #5C3A4D;   /* Pantone 18-1411 TCX Plum Wine */
+  --c-plum-wine-accent: #733E5A;   /* Refined Plum Wine for highlights & script in light mode */
+  --c-plum-wine-light:  #C497AD;   /* Soft Plum Wine for dark mode & badges */
+  --c-plum-wine-blush:  #F3E8EE;   /* Delicate Plum Wine tint */
+  --c-plum-wine-bg:     #FAF3F6;   /* Subtle Plum Wine background */
+
+  /* Aliased accent tokens */
+  --c-pink:        var(--c-plum-wine-blush);
+  --c-pink-light:  var(--c-plum-wine-light);
+  --c-pink-accent: var(--c-plum-wine-accent);
+  --c-pink-bg:     var(--c-plum-wine-bg);
+  --c-border:      rgba(47, 62, 55, 0.12);
+  --c-border-bold: rgba(47, 62, 55, 0.25);
+
+  /* Semantic mapping — Default is Warm Cream Light Mode */
+  --bg:          var(--c-cream);
+  --bg-alt:      #F5EFEA;
+  --surface:     #FFFFFF;
+  --surface-alt: #F9F4F0;
+  --border:      var(--c-border);
+  --text:        var(--c-deep);
+  --text-dim:    var(--c-deep-2);
+  --accent:      var(--c-sage);
+  --accent-dark: #7DA676;
+  --focus:       var(--c-sage);
+
+  /* ---- Typography ---- */
+  --font-display: 'Anton', system-ui, sans-serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-script:  'Allura', cursive;
+
+  /* Fluid type scale */
+  --text-xs:   clamp(0.7rem, 0.65rem + 0.25vw, 0.8rem);
+  --text-sm:   clamp(0.8rem, 0.75rem + 0.25vw, 0.9rem);
+  --text-base: clamp(0.95rem, 0.9rem + 0.25vw, 1.05rem);
+  --text-md:   clamp(1.05rem, 0.95rem + 0.5vw, 1.2rem);
+  --text-lg:   clamp(1.2rem, 1rem + 1vw, 1.5rem);
+  --text-xl:   clamp(1.5rem, 1.2rem + 1.5vw, 2rem);
+  --text-2xl:  clamp(2rem, 1.5rem + 2.5vw, 3rem);
+  --text-3xl:  clamp(2.5rem, 2rem + 3vw, 4rem);
+  --text-hero: clamp(5rem, 3rem + 10vw, 14rem);
+
+  /* ---- Spacing ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 5rem;
+  --space-8: 2rem;
+
+  /* ---- Layout ---- */
+  --container-max: 1300px;
+  --nav-height: 64px;
+
+  /* ---- Motion ---- */
+  --dur-fast: 180ms;
+  --dur-base: 350ms;
+  --dur-slow: 700ms;
+  --ease:        cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-out:    cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ---- Radius ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+}
+
+/* ---- Dark Mode (Optional via Toggle) ---- */
+[data-theme="dark"] {
+  --bg:          #141A16;
+  --bg-alt:      #1A221C;
+  --surface:     #1E2720;
+  --surface-alt: #232E26;
+  --border:      rgba(168, 197, 161, 0.1);
+  --text:        #EDF2EB;
+  --text-dim:    #9AAC96;
+  --accent:      var(--c-sage);
+  --accent-dark: #7DA676;
+  --c-pink-accent: #CFA0B6; /* Luminous Plum Wine for dark mode */
+}
+
+/* ---- Reduced Motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .hero-canvas,
+  .hero-m,
+  .cursor { display: none !important; }
+}
+
+[data-reduced-motion] *,
+[data-reduced-motion] *::before,
+[data-reduced-motion] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+[data-reduced-motion] .hero-canvas,
+[data-reduced-motion] .hero-m,
+[data-reduced-motion] .cursor { display: none !important; }
